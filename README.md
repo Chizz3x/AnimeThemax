@@ -16,6 +16,10 @@ If you don't know how to set it all up read below!
 
 If you have any questions you can join the support server - [AnimeCord](https://discord.gg/8MGnwxg)
 
--------
+## Terms
 
+By using this theme you agree with everything what is written below.
 Theme "AnimeThemax" is made by Chizz3x HellCat, the original owner of this nickname and proper credits **has** to be given if you share this content.
+
+You can not consider it as your own content even if it's remade by you in any way!
+
