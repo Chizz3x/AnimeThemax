@@ -343,6 +343,18 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     border:rgba(0,0,0,0) !important;
 }
 
+.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9 {
+    background: rgba(10,10,10,0.5);
+} /*spoiler*/
+
+.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover {
+    background: rgba(20,20,20,0.5);
+} /*spoiler*/
+
+.theme-dark .spoilerText-3p6IlD {
+    background: rgba(10,10,10,0.5);
+} /*spoiler*/
+
 .modal-3HD5ck.guild-settings-banned-user-modal.sizeSmall-Sf4iOi {
     background:rgba(60,70,80,0.6);
     border:solid 4px rgba(90,10,10,0.7);
