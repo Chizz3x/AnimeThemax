@@ -18,8 +18,8 @@ If you have any questions you can join the support server - [AnimeCord](https://
 
 ## Terms
 
-By using this theme you agree with everything what is written below.
-Theme "AnimeThemax" is made by Chizz3x HellCat, the original owner of this nickname and proper credits **has** to be given if you share this content.
-
-You can not consider it as your own content even if it's remade by you in any way!
+**By using this theme you agree with everything what is written below.**
+* Theme "AnimeThemax" is made by Chizz3x HellCat, the original owner of this nickname and proper credits **has** to be given if you share this content.
+* You can not consider it as your own content even if it's remade by you in any way!
+* Sharing this theme which had been customized by you is not allowed!
 
