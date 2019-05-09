@@ -20,6 +20,24 @@ red,green,blue
   100% {filter: contrast(100%)}
 }
 
+/*emoji zoom on hover [remove the /* from both sides below to enable]*/
+.emoji.jumboable:hover {
+    transform: scale(1.4);
+    z-index: 1;
+}
+.emoji:hover {
+    transform: scale(1.6);
+    transition: 0.5s;
+    z-index: 1;
+}
+.emoji {
+    transition: 0.5s;
+}
+.reactionInner-rRPZdY.da-reactionInner img {
+    width:1rem;
+    height:1rem;
+}
+
 
 [class~=appMount-3lHmkl] {
     background: url(https://i.pinimg.com/originals/53/f7/fc/53f7fc37fca53bbdcc673550c709699a.jpg) !important;
@@ -43,6 +61,15 @@ red,green,blue
 }
 .homeIcon-tEMBK1.da-homeIcon path {
     visibility: hidden;
+}
+
+/*discord loading background*/
+.container-16j22k.fixClipping-3qAKRb.da-container.da-fixClipping {
+    background-color: rgb(10,10,10);
+}
+/*discord loading text*/
+.status-1JTY3j.contentBase-11jeVK.da-status.da-contentBase {
+    content: "Discord + AnimeThemax loading";
 }
 
 /*"DISCORD" text on titlebar [top left]*/
@@ -430,7 +457,7 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 /*guild bans on hover*/
 .theme-dark .card-FDVird:before {
     background-color: rgba(20,20,20,0.4);
-    border-color: rgba(120,20,20,0.5);
+    border-color: transparent;
 }
 
 /*emoji picker table*/
@@ -466,6 +493,10 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 .bda-dark .emoji-picker .diversity-selector .popout-3sVMXz, .bda-dark .emojiPicker-3m1S-j .diversitySelector-tmmMv0 .popout-2nUePc {
     background: rgba(20,20,20,0.8);
     border: none;
+}
+/*emoji picker color change darken bg*/
+.bda-dark .emoji-picker .dimmer.visible, .bda-dark .emojiPicker-3m1S-j .dimmer-3iH-5D.visible-3k45bQ {
+    background-color: rgba(20,20,20,0.5);
 }
 /*emoji picker scroller*/
 .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
@@ -563,10 +594,9 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     background:rgba(100,20,20,0.7) !important;
 }
 
-/*guild emoji add name input*/
-.theme-dark .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
-    background:rgba(20,20,20,0.6);
-    border: none;
+/*emoji picker in message box [on hover of emoji]*/
+.theme-dark .selectorSelected-1_M1WV {
+    background-color: rgba(60,40,80,0.8);
 }
 
 /*user info box*/
@@ -906,4 +936,47 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 .channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u:hover {
     background-color: rgba(40,40,40,0.9);
+}
+
+/*gift nitro box*/
+.theme-dark .option-1l2vXE {
+    background-color: rgba(50,50,50,0.5);
+}
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    background-color: rgba(60,60,60,0.8);
+}
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+    background-color: rgba(70,70,70,0.9);
+}
+
+/*should be all of the green buttons on Discord*/
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: rgba(70,170,100,0.8);
+}
+.lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+    background-color: rgba(90,190,120,0.8);
+}
+
+/*shall be all of the brand color AKA Discord blue buttons*/
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: rgba(150,70,170,0.8);
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: rgba(170,90,190,0.8);
+}
+
+/*Discord blue switch color*/
+.themeDefault-24hCdX.valueChecked-m-4IJZ {
+    background-color: rgba(150,70,170,0.8);
+}
+.themeDefault-24hCdX.valueUnchecked-2lU_20 {
+    background-color: rgba(50,20,80,0.7);
+}
+
+/*slider bar color*/
+.barFill-23-gu- {
+    background-color: rgba(150,70,170,0.8);
+}
+.theme-dark .bar-2Qqk5Z {
+    background-color: rgba(50,20,80,0.7);
 }
