@@ -23,7 +23,7 @@ If you don't know how to set it all up read below!
 
 --------
 
-If you have any questions you can join the support server - [AnimeCord](https://discord.gg/zG83r6M)
+If you have any questions you can join the support server - **[AnimeCord](https://discord.gg/zG83r6M)**
 
 ## Terms
 
