@@ -4,6 +4,11 @@ A custom Discord theme
 
 If you don't know how to set it all up read below!
 
+## Examples
+
+<img src="pics/whole.png" alt="Whole app"></img>
+![](pics/user settings.png)
+
 -------
 
 1. Download BandagedDiscord/BetterDiscord [here](https://betterdiscord.net/home/)
