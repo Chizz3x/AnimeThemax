@@ -6,8 +6,12 @@ If you don't know how to set it all up read below!
 
 ## Examples
 
-<img src="pics/whole.png" alt="Whole app"></img>
-![](pics/user settings.png)
+![](pics/whole.png)
+![](pics/settings.png)
+![](pics/channels.gif)
+![](pics/user_card.gif)
+![](pics/emojis.gif)
+
 
 -------
 
