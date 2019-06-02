@@ -8,6 +8,7 @@ red,green,blue
 */
 
 /*adjust the height and width of your screen if you see some white spaces of covered parts at edges*/
+/*ATTENTION: WHEN YOU CHANGE THESE NUMBERS MAKE SURE LIVE UPDATE IS TURNED OFF AND ALL OF THESE NUMBERS ARE NO MORE HIGHER OR LOWER THAN 15%*/
 [class~=platform-win] {
     width: 100%;
     height: 95.7% !important;
@@ -709,7 +710,7 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 .app-19_DXt.platform-win {
     height: 95.7%;
     width: 100%;
-    position: inherit;
+    position: absolute;
     top: 35.5px;
 }
 
