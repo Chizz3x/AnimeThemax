@@ -38,7 +38,7 @@ red,green,blue
     height:1rem;
 }
 
-
+/*REPLACE THE LINK WITH YOUR DESIRED BACKGROUND PICTURE [1920x1080]*/
 [class~=appMount-3lHmkl] {
     background: url(https://i.pinimg.com/originals/53/f7/fc/53f7fc37fca53bbdcc673550c709699a.jpg) !important;
     background-size:1537px 824px !important;
@@ -130,10 +130,15 @@ red,green,blue
 }
 
 /*new guild unreads*/
-.pill-31IEus.da-pill.wrapper-sa6paO.da-wrapper.bd-unread {
+.listItem-2P_4kh.da-listItem.bd-guild.bd-unread .pill-31IEus.da-pill.wrapper-sa6paO.da-wrapper {
     width: 100%;
+    height: 100%;
     border-radius: 50%;
     box-shadow: 0px 0px 15px 0px rgba(210,20,220,1);
+    transition: border-radius 0.2s;
+}
+.listItem-2P_4kh.da-listItem.bd-guild.bd-unread:hover .pill-31IEus.da-pill.wrapper-sa6paO.da-wrapper {
+    border-radius: 35%;
 }
 /*selected guild glow*/
 .listItem-2P_4kh.da-listItem.bd-guild.bd-selected {
@@ -384,7 +389,7 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 
 .ui-standard-sidebar-view {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .wrapper-3WhCwL {
@@ -860,18 +865,19 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     margin-bottom: 8px;
     margin-left: 2px;
 }
+/*guild unread confuguration ++ layout (maybe)*/
 .item-2hkk8m {
-    animation: var(--unread-server-animation) 3s linear infinite;
-    border: 2px solid var(--main-color);
+    /*animation: var(--unread-server-animation) 3s linear infinite;*/
+    /*border: 2px solid red;*/
     background: transparent;
     border-radius: 100%;
     display: block;
     margin-left: 0;
     margin-top: 0;
     position: absolute;
-    top: 0;
-    right: 2px !important;
-    width: 48px;
+    top: 17%;
+    right: 17% !important;
+    width: 48px !important;
     height: 48px !important;
     /* remove the left to right display transformation */
     transform: none !important;
