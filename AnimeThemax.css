@@ -8,10 +8,12 @@ red,green,blue
 */
 
 /*adjust the height and width of your screen if you see some white spaces of covered parts at edges*/
-[class~=platform-win] {
-    width: 100%;
-    height: 95.7% !important;
-    top: 35.5px !important;
+/*be cautious adjusting these cause it can fuck some shit up*/
+.app-19_DXt.platform-win {
+    height: 95.7vh;
+    width: 100vw;
+    position: inherit;
+    top: 4.3vh;
 }
 
 @keyframes test {
@@ -137,7 +139,8 @@ red,green,blue
     box-shadow: 0px 0px 15px 0px rgba(210,20,220,1);
     transition: border-radius 0.2s;
 }
-.listItem-2P_4kh.da-listItem.bd-guild.bd-unread:hover .pill-31IEus.da-pill.wrapper-sa6paO.da-wrapper {
+.listItem-2P_4kh.da-listItem.bd-guild.bd-unread:hover .pill-31IEus.da-pill.wrapper-sa6paO.da-wrapper,
+.wrapper-21YSNc.da-wrapper {
     border-radius: 35%;
 }
 /*selected guild glow*/
@@ -306,8 +309,8 @@ color: rgba(50,30,10.5,0.8)
 }
 
 /* Area you type your messages in */
-[class~=innerNoAutocomplete-1WpcVO] {
-    background:rgba(0,0,0,0.3) !important;
+.inner-zqa7da.flex-1O1GKY.da-inner.da-flex.innerNoAutocomplete-1WpcVO.da-innerNoAutocomplete {
+    background:rgba(80,80,80,0.2) !important;
 }
 
 /*user settings backgrounds*/
@@ -375,7 +378,7 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 */
 
-/* This will set therainbow color rotation speed and type, just delete the "/*" at the end and start of the line you want to use */
+/* This will set the rainbow color rotation speed and type, just delete the "/*" at the end and start of the line you want to use */
 .container-2td-dC.da-container.unread-2OHH1w.da-unread:before {
     background: rgba(200, 200, 200, 1) !important; /* Just change the opacity higher than 0 if you want colors to appear */
     box-shadow: 0px 0px 10px 0.8px rgba(200, 200, 200, 0.8) !important;
@@ -480,7 +483,7 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 
 /*message box mousedown brighten*/
 .containerCozyBounded-1rKFAn:active:hover {
-    background-color: rgba(200,200,200,0.2);
+    background-color: rgba(200,200,200,0.3);
     transition: background-color 1s;
 }
 .containerCozyBounded-1rKFAn {
@@ -491,9 +494,10 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 .scroller-2FKFPG.firefoxFixScrollFlex-cnI2ix.da-scroller.da-firefoxFixScrollFlex.systemPad-3UxEGl.da-systemPad.inner-3wn6Q5.da-inner.content-1x7qW2.da-content {
     background: rgba(0,70,80,0);
 }
+/*chall be a both bans prview bottom and webhook edit bottom part*/
 .header-1R_AjF,
 .inner-3wn6Q5,
-.theme-dark .footer-2yfCgX {
+.theme-dark .footer-30ewN8 {
     background:rgba(0,0,0,0);
 }
 /*guild bans on hover*/
@@ -709,14 +713,6 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     fill: red !important;
 }
 
-/*app adjustment*/
-.app-19_DXt.platform-win {
-    height: 95.7%;
-    width: 100%;
-    position: inherit;
-    top: 35.5px;
-}
-
 /*add role to member popup*/
 .theme-dark .container-VSDcQc .sectionTag-pXyto9 {
     background-color: rgba(20,20,20,0.8);
@@ -736,9 +732,12 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 
 /*webook edit tab*/
-.theme-dark .modal-3HD5ck {
+/*channel topic when pressed on too*/
+.theme-dark .modal-3v8ziU {
     background-color: rgba(20,20,20,0.5);
+    box-shadow: 0 0 15px 0 purple;
 }
+
 
 /*find servers tab*/
 .pageWrapper-1PgVDX.da-pageWrapper {
@@ -818,7 +817,7 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 /*message input on active emoji search or mention search*/
 .inner-zqa7da.flex-1O1GKY.da-inner.da-flex.innerAutocomplete-1PN280.da-innerAutocomplete {
-    background-color: rgba(100,100,100,.2);    
+    background-color: rgba(100,100,100,.2);
 }
 /*the "Message" input container*/
 .theme-dark .chat-3bRxxu form,
@@ -859,13 +858,13 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     background-repeat:no-repeat;
 }
 
-/*new-start AKA guild layout :clap:*/
-.wrapper-1Rf91z .scroller-2TZvBN > div.listItem-2P_4kh:nth-child(1) {
+/*NEW-START AKA guild layout :clap:*/
+.wrapper-1Rf91z .scroller-2TZvBN > div.listItem-2P_4kh:nth-child(1),
+.wrapper-1Rf91z .scroller-2TZvBN > div.wrapper-21YSNc:nth-child(1) {
     width: 100% !important;
     margin-bottom: 8px;
     margin-left: 2px;
 }
-/*guild unread confuguration ++ layout (maybe)*/
 .item-2hkk8m {
     /*animation: var(--unread-server-animation) 3s linear infinite;*/
     /*border: 2px solid red;*/
@@ -882,7 +881,8 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     /* remove the left to right display transformation */
     transform: none !important;
 }
-.listItem-2P_4kh {
+.listItem-2P_4kh,
+.wrapper-21YSNc {
     width: auto;
     margin-left: 9px;
 }
@@ -897,14 +897,14 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 .wrapper-1Rf91z .scroller-2TZvBN .guildSeparator-3s64Iy {
     position: relative;
-    width: 100%;
+    width: 100%; 
     margin-top: 10px;
     width: 80px;
-    display: block;
+    display: block; 
     margin: 10px auto 5px;
     margin-left: -18%;
 }
-/*new-end*/
+/*NEW-END*/
 
 /*that little hirizontal line splitting channels and guilds containers*/
 .wrapper-1Rf91z.da-wrapper {
@@ -956,7 +956,7 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 
 /*guild members on hover*/
-.theme-dark .member-3W1lQa:hover .content-OzHfo4 {
+.theme-dark .member-3W1lQa:hover {
     background-color: rgba(150, 150, 150, .1);
     color: #fff;
 }
@@ -1041,14 +1041,25 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 
 /*gift nitro box*/
-.theme-dark .option-1l2vXE {
+.theme-dark .modal-yWgWj- {
     background-color: rgba(50,50,50,0.5);
 }
+.theme-dark .footer-3rDWdC {
+    background-color: transparent;
+}
+.theme-dark .option-1l2vXE {
+    background-color: rgba(20,20,20,0.5);
+}
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-    background-color: rgba(60,60,60,0.8);
+    background-color: rgba(60,60,60,0.6);
 }
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
-    background-color: rgba(70,70,70,0.9);
+    background-color: rgba(70,70,70,0.7);
+}
+
+/*main "Nitro" tab [image fade effect at the top]*/
+.theme-dark .itemBackground-2vEldQ:before {
+    background: radial-gradient(ellipse at top,transparent,transparent),linear-gradient(90deg,rgba(20,20,20,1) 0,transparent 40%,transparent 60%,rgba(20,20,20,1)),linear-gradient(0deg,rgba(20,20,20,1) 0,transparent 25%);
 }
 
 /*should be all of the green buttons on Discord*/
@@ -1087,4 +1098,85 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 .wrapper-2F3Zv8.da-wrapper.xxlarge-1R_NA5.da-xxlarge.avatarXXLarge-GhVtwJ .inner-1W0Bkn.da-inner.animate-2NjJXG.da-animate {
     border: 2px solid gold;
     box-shadow: 0px 0px 10px 1px gold;
+}
+
+/*guild tiers*/
+.theme-dark .iconBackgroundTierOne-2LhaMB,
+.theme-dark .iconBackgroundTierThree-3qw3JX,
+.theme-dark .iconBackgroundTierTwo-3bCmdc,
+.theme-dark .iconTierNone-3xOaeG {
+    color: rgba(60,60,60,1);
+}
+.theme-dark .iconBackgroundTierOne-2LhaMB.withBanner-3j8ruM,
+.theme-dark .iconBackgroundTierThree-3qw3JX.withBanner-3j8ruM,
+.theme-dark .iconBackgroundTierTwo-3bCmdc.withBanner-3j8ruM,
+.theme-dark .iconTierOne-BHC2T8,
+.theme-dark .iconTierTwo-_1edeM {
+    color: rgb(200,150,200);
+}
+
+/*server boost status*/
+.theme-dark .tierBody-x9kBBp,
+.theme-dark .tierBody-16Chc9 {
+    background: rgba(20,20,20,0.8)
+}
+.theme-dark .tierHeaderLocked-1a2opw,
+.theme-dark .tierHeaderLocked-1s2JJz {
+    background-image: linear-gradient(90deg,rgba(160,95,225,0.3), rgba(206,126,150,0.3));
+}
+.tierLock-1oFMOZ.da-tierLock,
+.tierLock-3CSxSX.da-tierLock {
+    color: rgba(200,10,10,1);
+}
+/*nitro server boost linear fade on adges*/
+.theme-dark .carouselRightGradientEdge-2Z3H8D {
+    background-image: linear-gradient(270deg,rgb(80,30,90),transparent);
+}
+.theme-dark .carouselLeftGradientEdge-3P4spl {
+    background-image: linear-gradient(270deg,transparent,rgb(80,30,90));
+}
+
+/*guild no icon*/
+.acronym-2mOFsV.da-acronym {
+    background-color: rgb(20,20,20);
+    transition: .5s background-color;
+}
+.acronym-2mOFsV.da-acronym:hover {
+    background-color: rgb(40,40,40);
+    transition: .5s background-color;
+}
+
+/*add a server*/
+.animator-US5i9g.da-animator.wrapper-2ZbzR9.fixClipping-3qAKRb.da-wrapper.da-fixClipping {
+    background: rgba(20,20,20,0.6);
+    box-shadow: 0 0 10px 0 purple;
+}
+.modal-3v8ziU.da-modal.slide-2pHaq5.da-slide.size-1XvbKb.da-size {
+    background: transparent;
+}
+.bda-dark .theme-dark .action-1lSjCi, .bda-dark .theme-light .action-1lSjCi {
+    background: rgba(30,30,30,0.5);
+}
+.or-3THJsp.da-or {
+    background: rgba(30,30,30,0.8) !important;
+    border: none !important;
+    box-shadow: 0 0 10px 0 gold;
+}
+.inputDefault-_djjkz.input-cIJ7To.size16-14cGz5.da-inputDefault.da-input.da-size16.input-1mgnkM.da-input {
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+/*Search pop-out box*/
+.resultsGroup-r_nuzN {
+    background: transparent;
+}
+.theme-dark .option-96V44q {
+    background: rgba(20,20,20,0.4);
+}
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background: rgba(70,20,90,0.5);
+}
+.theme-dark .container-3ayLPN {
+    background: rgba(20,20,20,0.7);
 }
