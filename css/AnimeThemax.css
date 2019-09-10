@@ -1,0 +1,1196 @@
+//META{"name":"AnimuThemax","description":"Simple theme for Anime lovers and just, for everyone.","author":"Chizz3x HellCat","version":"1.1","source":"https://gitlab.com/HCat/animethemax","website":"https://discord.gg/zG83r6M"}*//{}
+
+
+/*
+Everything in rgba() should be informat as:
+red,green,blue,opacity
+and rgb() as:
+red,green,blue
+*/
+
+/*adjust the height and width of your screen if you see some white spaces of covered parts at edges*/
+/*be cautious adjusting these cause it can fuck some shit up*/
+.appMount-3lHmkl.bda-dark.da-appMount {
+    height: 100vh;
+    width: 100vw;
+    position: inherit;
+}
+.app-2rEoOp {
+	top: -0.5vh;
+	height: 104.2%;
+}
+
+@keyframes test {
+  0% {filter: contrast(100%)}
+  50% {filter: contrast(50%)}
+  100% {filter: contrast(100%)}
+}
+
+/*emoji zoom on hover [remove the /* from both sides below to enable]*/
+.emoji.jumboable:hover {
+    transform: scale(1.4);
+    z-index: 1;
+}
+.emoji:hover {
+    transform: scale(1.6);
+    transition: 0.5s;
+    z-index: 1;
+}
+.emoji {
+    transition: 0.5s;
+}
+.reactionInner-rRPZdY.da-reactionInner img {
+    width:1rem;
+    height:1rem;
+}
+
+/*REPLACE THE LINK WITH YOUR DESIRED BACKGROUND PICTURE [1920x1080]*/
+[class~=appMount-3lHmkl] {
+    background: url(https://i.pinimg.com/originals/53/f7/fc/53f7fc37fca53bbdcc673550c709699a.jpg) !important;
+    background-size:1537px 824px !important;
+}
+
+/*.appMount-3lHmkl.bda-dark.da-appMount.bd-detached-editor {
+    animation-name: test;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}*/
+
+/*home icon config*/
+.homeIcon-tEMBK1 {  
+    background:rgba(20,20,20,1) url(http://icons.iconarchive.com/icons/custom-icon-design/silky-line-user/512/users-icon.png); /* The URL of the friends icon image you want */
+    background-position: top; /* This is the section of the image that you want to use, for exmaple this is using the top of the image, you would probably want to change this to center or top center */
+    background-repeat: no-repeat;
+    background-size: 80%; /* This is how zoomed in your image will be, change this back to 100% and increase or decrease as needed */
+    height: 50px;
+    width: 50px;
+}
+.homeIcon-tEMBK1.da-homeIcon path {
+    visibility: hidden;
+}
+
+.theme-dark {
+	--background-tertiary: transparent;
+	--background-secondary: rgba(0,0,0,0.7);
+	--background-primary: transparent;
+}
+
+/*discord loading background*/
+.container-16j22k.fixClipping-3qAKRb.da-container.da-fixClipping {
+    background-color: rgb(10,10,10);
+}
+/*discord loading text*/
+.status-1JTY3j.contentBase-11jeVK.da-status.da-contentBase {
+    content: "Discord + AnimeThemax loading";
+}
+
+/*"DISCORD" text on titlebar [top left] (just don't touch this)*/
+.wordmarkWindows-1v0lYD.wordmark-2iDDfm.da-wordmarkWindows.da-wordmark svg {
+    bottom: 19px;
+    right: 6px;
+    position: relative
+}
+
+/*(nope... don't touch this too)*/
+.wordmarkWindows-1v0lYD {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAyCAYAAAAZUZThAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNv1OCegAAAPrSURBVHhe7dzPq85pGAZwNlJSNvbKxkZKsbCglLK0mIWi7I2QbFj4sZMUaXZTM42kmC1TampsKKUUIck/oJQfS4vjurt76u451/2c7/d5v9P7cq6rPpvb8+M957jE8T3vmqWlJRFJ0KGIODoUEUeHIuLoUEQcHYqIo0MRcXQoIo4ORcTRoYg4OhzgBDzqwM6qHQe21xwAtmc3sPXmLLA9tQfA9rdcAnZW7S6w/b22ALvnKLD1vS4Cu6f2F7D9Lb8BO6v2B7D9hq0354GtNzuA7aHocICTMDafgZ1Vs4JkaRUkyzlge2qvYGyuAjur9himTKsgU+YKsHtqD2Fs7gA7q2Z/cGVh681lyKKCVFFB+qOCsGHiSHALYp4nPkKJFSSewe4w8yrIfxBfe5a4ZmhB7kPcN8QHyNIqCDtrJVlaBYlfyxdQ8gXYHeYblDyBeAa7w/wwBXkJWdh68ydk2QRsz7wKEp2GLPuA7ZnaDciSFaTHNsjSKkiWf4GtN1npW3+7UEEqKohTQZwKUlFBnAriWgWx30NF3KOCVFSQfotekOgQZDkGZV1dkHjGKHSYUEE8KojLooKQsPVGBemngiz30xVkP/ySYOvNai7IU3gdxAz53A11BrJ7LkC5Zyew/Sa+nhpbb2YtyAYodxyGmPjx/ANDXs+K6DDRU5Aeq7kg7yALW9/LCpJlL7A9U5i1INE6yHIP2J7R6DChgnhUkH4qyARaBfkbrhG3IcsiF2Q9xI8jFuQt2L/hCrZ/jHiPPTUQE+9p/bVqiIMQ74piQd5DvJed1aKCTJRFLshmyPI7sD293kAWtr7XKRiSoc9iZVSQiaKCOBWkAx0mVBDPFAWxb62aPZBlioKUe8wiFiS+PnYWU9ZvhyxWkJ6zl6HDhP6R7pm1IPb9+iz2fX62p1cWezydrf+/Tf3/IPHXntkgSVw3Ch0mVBCPCtJPBZmACjKdLCrIQHSY6CmIffsuy2p61KT1E4VbA7Z3jNZPFP4KU96VZV6Pu8eP7SZk0dO8VRa9IGx9r1ZBZnrkgsgyr4JEety9ooI4FcSpIBUVxKkgTgWpqCBOBXEqSEUFcSqIm0tB7F3prCRFjD2bz9ieEvskxP2LVpD4uu2dArPYJ7+ss3vZWbVWQeK9Q7E7TKsg14Gd1bIL2D0mfi2/QokVhJ1lYkE+QTyD3WF+mIJEeuM4j944zumN4yoqiEcFcSpIRQXxqCBOBSE2dmDnMGyvYWsLtt6wtQzbu5K1wM6qsb2zYHcUbH0vdj7D9g7BzqqxfQVbX7D1hq1N0aGIODoUEUeHIuLoUEQcHYqIo0MRcXQoIo4ORcTRoYiYpTXfAUoMp4rABBPnAAAAAElFTkSuQmCC') !important;
+    background-repeat: no-repeat;
+    background-size: 80% 60%;
+    top: 18px;
+    left: 8px;
+}
+
+/*custom mention color*/
+.lowerBadge-29hYVK.da-lowerBadge div,
+.mentionsBadge-7f5lud.iconBase-2IHuka.da-mentionsBadge.da-iconBase div,
+.mention-1f5kbO{
+    background-color: purple !important;
+}
+
+/*voice channel joined on guild icon top rigt*/
+.upperBadge-2XnnGB.da-upperBadge div {
+    background-color: rgba(100,100,200,1);;
+}
+
+/*replace the link with any pic u want for the background and adjust the sice in pixels*/
+
+/*added some status color changing XD*/
+/*do not disturb AKA dnd color*/
+.dnd-1_xrcq {
+    background: rgba(240,50,50,0.9);
+}
+
+/*online status color*/
+.online-2S838R {
+    background: rgba(60,180,60,0.9);
+}
+
+/*idle status color*/
+.idle-3DEnRT {
+    background: rgba(250,190,60,0.9);
+}
+
+/*offline statsu color*/
+.offline-3qoTek {
+    background: rgba(50,50,50,0.9);
+}
+
+/*new guild unreads*/
+.listItem-2P_4kh.da-listItem.bd-guild.bd-unread .pill-31IEus.da-pill.wrapper-sa6paO.da-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 0px rgba(210,20,220,1);
+    transition: border-radius 0.2s;
+}
+.listItem-2P_4kh.da-listItem.bd-guild.bd-unread:hover .pill-31IEus.da-pill.wrapper-sa6paO.da-wrapper,
+.pill-31IEus {
+    pointer-events: none;
+	width: 100%;
+}
+/*selected guild glow*/
+.listItem-2P_4kh.da-listItem.bd-guild.bd-selected {
+    box-shadow: 0px 0px 15px 0px gold;
+    border-radius: 35%;
+}
+
+/* 
+Note: You can change colors with the hex codes or using the [rgba(0,0,0,0)] or [rgb(0,0,0)]
+r - red
+g - green
+b - blue
+a - opacity (0-transparent, 1-solid, 0.5-half transparent)
+
+For example: 
+color: rgba(50,30,10.5,0.8)
+*/
+
+
+/* Size of message texts and color */
+.markup-2BOw-j {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9375rem;
+}
+/* Size of the usernames */
+.username-_4ZSMR {
+    font-size: 1rem;
+}
+
+/* Selected channels and voice join */
+.iconVisibility-1bOqu7.da-iconVisibility.wrapper-1ucjTd.da-wrapper.modeSelected-1zApJ_ div {
+    color: rgba(230,230,230,1) !important;
+    background-color: rgba(30,30,30,0.8);
+}
+
+/*color of the text channels in default*/
+.iconVisibility-1bOqu7.da-iconVisibility.wrapper-1ucjTd.da-wrapper div {
+    color: rgba(114,118,125, 1);
+    transition: color 3s;
+}
+
+/* Text channel on hover */
+.iconVisibility-1bOqu7.da-iconVisibility.wrapper-1ucjTd.da-wrapper:hover div {
+    color: rgba(200,80,200,1) !important;
+    transition: color 0s;
+    background-color: rgba(30,30,30,0.6);
+}
+/* Voice channel on hover [NOT WORKING FOR NOW]*/
+.nameHoveredVoice-YJ1Vfd {
+    color: rgba(80,80,200,0.8) !important;
+    transition: color 0s;
+}
+/*Unread text channels*/
+.iconVisibility-1bOqu7.da-iconVisibility.wrapper-1ucjTd.da-wrapper.modeUnread-1zpFdA div {
+    color: rgba(180,180,180,1);
+}
+/*muted channels*/
+.iconVisibility-1bOqu7.da-iconVisibility.wrapper-1ucjTd.da-wrapper.modeMuted-3osy7j div {
+    color: rgba(100,100,100,0.6);
+}
+.iconVisibility-1bOqu7.da-iconVisibility.wrapper-1ucjTd.da-wrapper.modeMuted-3osy7j:hover div {
+    color: rgba(120,80,150,0.6) !important;
+}
+/*connected voice*/
+.iconVisibility-1bOqu7.da-iconVisibility.wrapper-1ucjTd.da-wrapper.modeConnected-2IEL4z div {
+    color: rgba(100,100,200,1);
+    transition: color 0s;
+}
+.colorConnectedVoice-3kyvUN.icon-sxakjD.da-colorConnectedVoice.da-icon {
+    color: rgba(100,100,255,1);
+}
+.theme-dark .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh, .theme-light .listDefault-2y5Z9D .clickable-23RaYz.selected-3TGCSZ .content-3xS9Lh {
+    background-color: rgba(20,20,20,0.4);
+}
+/*category*/
+.name-IbjUBS.da-name {
+    color: rgba(100,200,120,1);
+}
+.name-IbjUBS.da-name:hover {
+    color: rgba(100,190,120,1);
+}
+/*user amount display in voice channel*/
+.users-i_3-kL,
+.total-3tKGEB {
+    background-color: transparent;
+}
+.users-i_3-kL:after {
+    content: "/";
+    position: relative;
+    left: 0.6px;
+}
+.total-3tKGEB:after {
+    border-right-color: transparent;
+}
+
+/*user connected to voice channel on hover*/
+.theme-dark .listDefault-2y5Z9D .clickable-23RaYz:hover .content-3xS9Lh {
+    background-color: rgba(20,20,20,0.4) !important;
+}
+
+/*member guild info background*/
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+    background: rgba(20,20,20,0.85);
+    color: hsla(0,0%,100%,.8);
+}
+
+/*"add note" box on user info box*/
+.theme-dark .quickMessage-1yeL4E {
+    background-color: #000000;
+    border-color: #2f3136;
+    color: hsla(0,0%,100%,.7);
+}
+
+/*playing header*/
+.headerPlaying-j0WQBV {
+    background: rgba(30,80,80,0.9) url("https://s3.envato.com/files/216562654/preview_image.jpg");
+    opacity:0.9;
+    border-top: 5px solid rgba(50,80,120,0.8);
+}
+
+/*spotify header*/
+.headerSpotify-zpWxgT {
+    background: rgba(30,120,50,0.9) url("https://sm.mashable.com/t/mashable_in/photo/default/spotify-mainecover-copy_gmkb.910.jpg") -100px 50px;
+    opacity:0.9;
+    border-top: 5px solid rgba(50,120,80,0.8);
+}
+
+/*streaming header*/
+.headerStreaming-2FjmGz {
+    background: rgba(90,20,130,1) url("https://png.pngtree.com/thumb_back/fw800/back_pic/05/14/17/8659a5141fd7939.jpg") -100px 250px;
+    opacity:0.9;
+    border-top: 5px solid rgba(90,20,150,0.8);
+}
+
+/*normal header*/
+.headerNormal-T_seeN {
+    background: rgba(50,50,50,0.8) url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_C9Zu6JnnFyImcC0Y52w3LaOjc6XPAXDbmjV1UqqwaiShi3X");
+    opacity:0.9;
+    border-top: 5px solid rgba(120,120,120,0.5);
+}
+
+/*on avatar hover in user info card*/
+.avatarWrapperNormal-3wFMbf:hover,
+.avatarHint-1qgaV3:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+.avatarWrapperNormal-3wFMbf,
+.avatarHint-1qgaV3 {
+    transition: 1s;
+}
+
+/*on role hover*/
+.role-2irmRk:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+.role-2irmRk {
+    transition: 1s;
+}
+
+/*this chall be the members + chatbox container*/
+[class~=chat-3bRxxu] {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Area you type your messages in */
+.inner-zqa7da.flex-1O1GKY.da-inner.da-flex.innerNoAutocomplete-1WpcVO.da-innerNoAutocomplete {
+    background:rgba(80,80,80,0.2) !important;
+}
+
+/*user settings backgrounds*/
+.sidebarRegion-VFTUkN.da-sidebarRegion,
+.theme-dark .contentRegion-3nDuYy {
+    background:rgba(0,0,0,0);
+}
+
+/*dm group icon*/
+.inner-1x-wIi.da-inner.inner-1W0Bkn.da-inner {
+    background-image: url(https://i.imgur.com/1urAkmd.png) !important;   
+    background-color: rgba(0,0,0,0);
+}
+
+.wrapper-2lTRaf.da-wrapper {
+    background-color: rgba(0,0,0,0);
+}
+
+.standardSidebarView-3F1I7i.da-standardSidebarView {
+    background: rgba(0,0,0,0.7);
+}
+
+/* The category font color in the channels list both with the arrow color near it */
+.nameDefault-2DI02H.colorTransition-2-M2tg.overflowEllipsis-2JOaZ6,
+.iconDefault-3Gr8d2.iconTransition-2pOJ7l {
+    color:rgba(67,181,129,1) !important;
+}
+
+
+
+/* There is a sweet sweet option to make the servers you are in border change colors in rainbow.
+(Note: It can cause some lag issues)
+If you don't want it leave all of this alone and Enjoy you new Theme!
+If you still want to enable it, just delete the '/*' at the start and at the end of the script below. */
+
+
+/*
+@keyframes color-rotate {
+    0%   {background: rgba(255,255,255,.8);}
+    33%  {background: rgba(0,0,0,.6);}
+    66%  {background: rgba(255,255,255,.8);}
+    100%  {background: rgba(0,0,0,.6);}
+}
+
+@keyframes color-rotate-alt {
+    0%   {background: rgba(67, 181, 129, 0.8);}
+    33%  {background: rgba(0,0,0,.6);}
+    66%  {background: rgba(67, 181, 129, 0.8);}
+    100%  {background: rgba(0,0,0,.6);}
+}
+
+@keyframes hue-rotate {
+    0% {
+        -webkit-filter: hue-rotate(0);
+        -moz-filter: hue-rotate(0);
+        -ms-filter: hue-rotate(0);
+        filter: hue-rotate(0);
+    }
+    100% {
+        -webkit-filter: hue-rotate(360deg);
+        -moz-filter: hue-rotate(360deg);
+        -ms-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+*/
+
+/* This will set the rainbow color rotation speed and type, just delete the "/*" at the end and start of the line you want to use */
+.container-2td-dC.da-container.unread-2OHH1w.da-unread:before {
+    background: rgba(200, 200, 200, 1) !important; /* Just change the opacity higher than 0 if you want colors to appear */
+    box-shadow: 0px 0px 10px 0.8px rgba(200, 200, 200, 0.8) !important;
+    /*animation: hue-rotate 8s linear infinite;*/
+    /*animation: color-rotate 3s linear infinite !important;*/
+    /*animation: hue-rotate 3s linear infinite, color-rotate-alt 4s linear infinite !important;*/
+}
+
+.scroller-2FKFPG.content-region-scroller, .scroller-2FKFPG.custom-scroller {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.ui-standard-sidebar-view {
+    visibility: hidden;
+}
+
+.wrapper-3WhCwL {
+    color: rgba(190,90,255,0.8) !important;
+    background-color: rgba(190,90,255,0.1) !important;
+}
+
+.wrapper-3WhCwL:hover {
+    background-color: rgba(190,90,255,0.2) !important;
+}
+
+/*close button aka ESC*/
+.theme-dark .closeButton-1tv5uR {
+    border-color: rgba(220,40,40,0.6);
+    border-width: 1.5px;
+}
+.theme-dark .closeButton-1tv5uR:hover {
+    background-color: rgba(230,60,60,0.2);
+}
+.fill {
+    fill: rgba(220,80,80,0.8);
+}
+
+.theme-dark .keybind-KpFkfr {
+    color: rgba(210,60,60,0.8);
+}
+/*dm calls*/
+.videoHeight-Qp_9vC.da-videoHeight.minimum-1pRSEN.wrapper-29NfPK.da-wrapper.minimum-2d6zH6.animated-UtE465.da-animated {
+    background: rgba(0,0,0,0);
+}
+.video-1FfuMD {
+    background-color: rgba(0,0,0,.15) !important;
+    border-radius: 25px;
+}
+
+/*discord nitro page*/
+.tier1Banner-1B_WXY.da-tier1Banner {
+    background-color: rgba(50,50,50,0.5);
+}
+
+/*Inventory*/
+.root-1BQpZw.da-root {
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*my games*/
+.gameLibrary-TTDw4Y.da-gameLibrary {
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*activity*/
+.activityFeed-1C0EmJ.da-activityFeed {
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*store*/
+.applicationStore-1pNvnv.da-applicationStore {
+    background-color: rgba(0,0,0,0.7);
+}
+.row-1bU71H.da-row {
+    background-color: rgba(30,30,30,0.5);
+}
+.toggleCollapseButton-2wffKu.da-toggleCollapseButton.button-38aScr.da-button.lookFilled-1Gx00P.colorPrimary-3b3xI6.sizeMedium-1AC_Sl.grow-q77ONN.da-grow {
+    background-color: rgba(80,150,80,0.7);
+}
+.bodySection-jqkkIP.section-foaVwT.da-bodySection.da-section {
+    background-color: rgba(30,30,30,0.6);
+}
+/*store: show all dlc*/
+.collapseButton-32NMMH.da-collapseButton.button-38aScr.da-button.lookFilled-1Gx00P.colorPrimary-3b3xI6.sizeSmall-2cSMqn.grow-q77ONN.da-grow {
+    background-color: rgba(10,10,10,0.3);
+}
+.collapseButton-32NMMH.da-collapseButton.button-38aScr.da-button.lookFilled-1Gx00P.colorPrimary-3b3xI6.sizeSmall-2cSMqn.grow-q77ONN.da-grow:hover {
+    background-color: rgba(40,40,40,0.3);
+}
+/*store: price*/
+.price-NUANu6.da-price {
+    background-color: rgba(10,10,10,0.3);
+}
+.price-NUANu6.da-price:hover {
+    background-color: rgba(40,40,40,0.3);
+}
+
+/*friends*/
+.container-3gCOGc.da-container {
+    background-color: rgba(0,0,0,0.7);
+}
+
+/*message box mousedown brighten*/
+.containerCozyBounded-1rKFAn:active:hover {
+    background-color: rgba(200,200,200,0.3);
+    transition: background-color 1s;
+}
+.containerCozyBounded-1rKFAn {
+    transition: 2s;
+}
+
+/*guild ban preview box*/
+.scroller-2FKFPG.firefoxFixScrollFlex-cnI2ix.da-scroller.da-firefoxFixScrollFlex.systemPad-3UxEGl.da-systemPad.inner-3wn6Q5.da-inner.content-1x7qW2.da-content {
+    background: rgba(0,70,80,0);
+}
+/*chall be a both bans prview bottom and webhook edit bottom part*/
+.header-1R_AjF,
+.inner-3wn6Q5,
+.theme-dark .footer-30ewN8 {
+    background:rgba(0,0,0,0);
+}
+/*guild bans on hover*/
+.theme-dark .card-FDVird:before {
+    background-color: rgba(20,20,20,0.4);
+    border-color: transparent;
+}
+
+/*emoji picker table*/
+.bda-dark .emoji-picker, .bda-dark .emojiPicker-3m1S-j {
+    background-color: none;
+}
+.emojiPicker-3m1S-j.da-emojiPicker {
+    background: rgba(20,20,20,0.6) !important;
+    border: none;
+}
+.category-2U57w6 {
+    background:rgba(0,0,0,0) !important;
+}
+.stickyHeader-1SS0JU {
+    background:rgba(20,20,20,0.6) !important;
+    right: 3.9% !important;
+}
+.theme-dark .forceLightTheme-1nVhlT .sadImage-2ph8SI, .theme-light .sadImage-2ph8SI {
+    background-image: url(https://steamcommunity-a.akamaihd.net/economy/image/cKxH0Lffsu0bR2GN0jri3Wbz8zTZAx_beu1CDH04nP9_GI86c-65ieWV-gmEVQ2mYi9FDdllnoK_AFylLxYeK8WJ7eocSyKpsGEWTWw7Pdeq995htrbtX-dJEdLIzdyRQQC1xhRr-x90VCkca0SeIqM4tSUCyQGuDtZhUM5LUFWnsWjFZAM3uCLKuIoGwwLv4DJylxZdK7aYJ7hUmQ7zx3ft1jo7jVO1wofhL_El2RqV4zoI20-KYB40w40hHPQQQfRN1cQFbLYMsSsoWbEnRrpRk4Bv3n7KidlCzGE1Mzr5U9ikoN3JhXJXaTt2DliiFNwlkLri1kvu6EilO7ORVrNKhJvF7pTSCV6SfthrR0QCyvkk1_iDNZ1g5gT6JMr5zPE3NFHjsw3BMrNh2E1GX-saO88C9A/360fx360f);
+    background-size: 190px 190px;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+}
+/*emoji picker search bar*/
+.bda-dark .emojiPicker-3m1S-j .header-1nkwgG .searchBar-2pWH0_ {
+    background-color: rgba(40,40,40,0.4);
+}
+.input-1Rv96N.da-input {
+    color: rgba(230,230,230,0.8);
+}
+/*emoji picked skin color change*/
+.bda-dark .emoji-picker .diversity-selector .popout-3sVMXz, .bda-dark .emojiPicker-3m1S-j .diversitySelector-tmmMv0 .popout-2nUePc {
+    background: rgba(20,20,20,0.8);
+    border: none;
+}
+/*emoji picker color change darken bg*/
+.bda-dark .emoji-picker .dimmer.visible, .bda-dark .emojiPicker-3m1S-j .dimmer-3iH-5D.visible-3k45bQ {
+    background-color: rgba(20,20,20,0.5);
+}
+/*emoji picker scroller*/
+.scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background-color: rgba(120,80,100,1);
+}
+.bda-dark .emoji-picker .scroller::-webkit-scrollbar, .bda-dark .emoji-picker .scroller::-webkit-scrollbar-track, .bda-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar-track, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar-track-piece {
+    background-color: rgba(0,0,0,0) !important;
+    border: none !important;
+	width: 14px;
+}
+
+/*GIF picker*/
+/*GIF picker background*/
+.autocomplete-1vrmpx.autocomplete-i9yVHs.da-autocomplete {
+    background-color: rgba(30,30,30,0.8);
+}
+/*GIF picker search bar*/
+.container-cMG81i {
+    background-color: rgba(0,0,0,0.5) !important;
+}
+/*no GIFs found image*/
+.sadImage-2ph8SI.da-sadImage {
+    background-image: url(https://thumbs.gfycat.com/FlatPotableCowbird-size_restricted.gif);
+    background-size: 170px 170px;
+    background-position: center;
+    width: 150px;
+    height: 180px;
+}
+
+/*menu search bar top left*/
+.searchBar-2_Yu-C {
+    background-color: rgba(0,0,0,0);
+}
+
+/*some of search boxes in guild settings*/
+.flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignStretch-DpGPf3.noWrap-3jynv6.searchBar-1MOL6S {
+    background:rgba(20,20,20,0.2);
+}
+
+/*markdowns*/
+/*```code``` markdown*/
+.theme-dark .markup-2BOw-j pre {
+    background-color: rgba(20,20,20,0.6);
+    border-color: rgba(90,0,90,0.4);
+}
+/*||spoiler|| markdown*/
+.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover {
+    background-color: rgba(110,50,180,0.5);
+}
+.theme-dark .spoilerText-3p6IlD {
+    background-color: rgba(50,50,50,0.5);
+}
+.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9 {
+    background-color: rgba(30,30,30,0.9);
+}
+/*`code` markdown*/
+.markup-2BOw-j.da-markup code {
+    background: rgba(0,0,0,0.3) !important;
+}
+
+/*BANDAGED BD tabs*/
+.scroller-2FKFPG.sidebar-region-scroller, .scrollerWrap-2lJEkd.content-region-scroller-wrap.scrollerThemed-2oenus.themeGhost-28MSn0.scrollerTrack-1ZIpsv {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+/*server owner icon*/
+.ownerIcon-uZ6mE7.icon-1mmpLU.da-ownerIcon.da-icon path {
+    fill: rgb(170, 60, 255) !important;
+}
+
+/*guild menu*/
+/*guild menu: simple buttons*/
+.menu-Sp6bN1 {
+    background: rgba(20,20,20,0.7) !important;
+}
+.item-1GzJrl:hover {
+    background:rgba(100,100,100,0.2) !important;
+}
+/*guild menu: invite button*/
+.item-1GzJrl.invite-271nFU {
+    background:rgba(20,20,90,0.4);
+}
+.item-1GzJrl.da-item.invite-271nFU.da-invite .label-1Y-LW5.da-label {
+    visibility: hidden;
+}
+.item-1GzJrl.da-item.invite-271nFU.da-invite .label-1Y-LW5.da-label:before {
+    content: "I am Straight";
+    visibility: visible;
+}
+.item-1GzJrl.invite-271nFU:hover {
+    background:rgba(20,20,100,0.7) !important;
+}
+/*guild menu: leave server*/
+.item-1GzJrl.da-item.leave-1DRJfn.da-leave .icon-2doZ3q.da-icon {
+    background-image: url(https://discordemoji.com/assets/emoji/nope.png) !important;
+    background-size: 19px 18px
+}
+.item-1GzJrl.da-item.leave-1DRJfn.da-leave .label-1Y-LW5.da-label {
+    visibility: hidden;
+}
+.item-1GzJrl.da-item.leave-1DRJfn.da-leave .label-1Y-LW5.da-label:before {
+    content: "I am Gay";
+    visibility: visible;
+}
+.item-1GzJrl.leave-1DRJfn {
+    background:rgba(90,20,20,0.4);
+}
+.item-1GzJrl.leave-1DRJfn:hover {
+    background:rgba(100,20,20,0.7) !important;
+}
+
+/*emoji picker in message box [on hover of emoji]*/
+.theme-dark .selectorSelected-1_M1WV {
+    background-color: rgba(60,40,80,0.8);
+}
+
+/*user info box*/
+/*top normal*/
+.topSectionNormal-2-vo2m {
+    background-color: transparent !important;
+}
+/*top playing*/
+.topSectionPlaying-1J5E4n {
+    background-color: rgba(90,90,200,0.5);
+}
+/*top spotify*/
+.topSectionSpotify-1lI0-P {
+    background-color: rgba(90,200,90,0.5);
+}
+/*top streaming*/
+.topSectionStreaming-1Tpf5X {
+    background-color: rgba(130,90,200,0.5);
+}
+/*bg*/
+.theme-dark .body-3ND3kc {
+    background-color: rgba(20,20,20,0.4);
+}
+
+/*Home*/
+/*home buttons*/
+.channel-2QD9_O:hover a {
+    background: rgba(10,10,10,0.12);
+}
+.channel-2QD9_O.selected-1HYmZZ a {
+    background: rgba(40,40,40,0.5)
+}
+
+/*titlebar*/
+.typeWindows-1za-n7.titleBar-AC4pGV.horizontalReverse-3tRjY7.flex-1O1GKY.directionRowReverse-m8IjIq.justifyStart-2NDFzi.alignStretch-DpGPf3 {
+    background:rgba(1,1,1,0.8);
+    height: 35px;
+    bottom:3.8px;
+    position:relative;
+}
+/*titlebar: buttons*/
+.winButtonMinMax-PBQ2gm.winButton-iRh8-Z.flexCenter-3_1bcw.flex-1O1GKY.justifyCenter-3D2jYp.alignCenter-1dQNNs,
+.winButtonClose-1HsbF-.winButton-iRh8-Z.flexCenter-3_1bcw.flex-1O1GKY.justifyCenter-3D2jYp.alignCenter-1dQNNs {
+    position: relative;
+    top: -1px;
+    height: 36px;
+    width: 2.8%;
+    right: 0.1%;
+}
+/*titlebar: close*/
+.winButtonClose-1HsbF-:hover {
+    background:rgba(200,90,90,0.3);
+}
+.winButtonClose-1HsbF-:hover svg polygon {
+    fill: red !important;
+}
+
+/*add role to member popup*/
+.theme-dark .container-VSDcQc .sectionTag-pXyto9 {
+    background-color: rgba(20,20,20,0.8);
+}
+.theme-dark .autocompleteArrow-Zxoy9H, .theme-dark .autocompleteHeaderBackground-30T70q {
+    background-color: rgba(30,30,30,0.8);
+}
+.theme-dark .row-rrHHJU.selected-1pIgLL {
+    background: linear-gradient(90deg, rgba(50,20,90,0.8), rgba(30, 30, 30, 0.2));
+}
+/*add role pupup slider*/
+.scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scrollerStore-390omS::-webkit-scrollbar-track {
+    background-color: rgba(30,30,30,0.8);
+}
+.scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background-color: rgba(180,180,180,0.8);
+}
+
+/*webook edit tab*/
+/*channel topic when pressed on too*/
+.theme-dark .modal-3v8ziU {
+    background-color: rgba(20,20,20,0.5);
+    box-shadow: 0 0 15px 0 purple;
+}
+
+
+/*find servers tab*/
+.pageWrapper-1PgVDX.da-pageWrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.theme-dark .searchBox-3Y2Vi7 {
+    background-color: rgba(30,30,30,0.5);
+}
+.bg-AYqtMd.da-bg {
+    -webkit-mask: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,1) 20%);
+}
+
+/*home tabs top bar*/
+.theme-dark .container-1r6BKw {
+    background: rgba(0,0,0,0);
+    box-shadow: none;
+    border-bottom: 1.2px solid rgba(20,20,20,0.5);
+}
+.item-PXvHYJ.da-item.themed-OHr7kt.da-themed {
+    background-color: transparent;
+    color: rgba(160, 160,160, 1);
+}
+.item-PXvHYJ.da-item.themed-OHr7kt.da-themed:hover {
+    color: rgba(180,180,180,1);
+    background-color: rgba(80,80,80,0.2);
+}
+.theme-dark .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .theme-dark .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover, .theme-dark .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .theme-dark .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover {
+    background-color: rgba(30,30,30,0.6);
+}
+.theme-dark .children-19S4PO:after {
+    background: rgba(20,20,20,0.3);
+    width: 1.2px;
+}
+
+/*More messages popup*/
+.hasMore-3e72_v button {
+    background: rgba(80,80,150,0.5) !important;
+    border-color: rgba(50,50,100) !important;
+}
+
+/*"x new messages since h:mm TT     Mask as read"*/
+.newMessagesBar-mujexs {
+    background: rgba(120,50,150,0.5);
+}
+.newMessagesBar-mujexs:hover {
+    background: rgba(150,50,180,0.5);
+}
+
+/*webhook channel change popout*/
+
+
+/*containers*/
+/*whole app container*/
+.container-2lgZY8 {
+    background-color: rgba(0, 0, 0, 0);
+}
+/*another weird whole app container layer*/
+.theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ {
+    background: rgba(0, 0, 0, 0);
+}
+/*guild channels container*/
+.container-PNkimc.da-container {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/*Channels + user container*/
+.sidebar-2K8pFh.da-sidebar {
+	/*top: 1px;
+	position: relative;*/
+	height: 95.9vh;
+}
+/*and once more channel container*/
+.container-PNkimc {
+    background-color: rgba(0, 0, 0, 0);
+    contain: layout;
+    min-height: 0;
+    position: relative;
+}
+/*user [inguild] tab at the bottom left*/
+.panels-j1Uci_ {
+	background: transparent;
+}
+.container-3baos1.da-container {
+    background: rgba(0,0,0,0.6) !important;
+    color: #fff;
+    border-top: 1px solid rgba(50,50,50,0.5);
+}
+/*message input on active emoji search or mention search*/
+.inner-zqa7da.flex-1O1GKY.da-inner.da-flex.innerAutocomplete-1PN280.da-innerAutocomplete {
+    background-color: rgba(100,100,100,.2);
+}
+/*the "Message" input container*/
+.theme-dark .chat-3bRxxu form,
+/*members with chatzone container*/
+.theme-dark .content-yTz4x3 {
+    background-color: rgba(0,0,0,0);
+}
+/*chatzone container*/
+.theme-dark .messagesWrapper-3lZDfY {
+    background-color: rgba(0,0,0,0);
+}
+/*members of server container*/
+.theme-dark .members-1998pB {
+    background-color: rgba(0,0,0,0);
+}
+/*removes weird rounded borners in guild container and app container*/
+.sidebar-2K8pFh.da-sidebar,
+.wrapper-1Rf91z {
+    border-radius: 0px;
+}
+.base-3dtUhz {
+	left: 15.3vh
+}
+/*guilds container*/
+.wrapper-1Rf91z.da-wrapper {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/*whole appmount container AKA Discord itself!*/
+.appMount-3lHmkl {
+    background-color: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    background: url(https://i.pinimg.com/originals/53/f7/fc/53f7fc37fca53bbdcc673550c709699a.jpg); /* The URL of the background image you want */
+    background-size:1537px 1150px;
+    background-repeat:no-repeat;
+}
+
+/*NEW-START AKA guild layout :clap:*/
+.wrapper-1Rf91z .scroller-2TZvBN > div.listItem-2P_4kh:nth-child(1),
+.wrapper-1Rf91z .scroller-2TZvBN > div.wrapper-21YSNc:nth-child(1) {
+    width: 100% !important;
+    margin-bottom: 8px;
+    margin-left: 2px;
+}
+.item-2hkk8m,
+.expandedFolderBackground-2sPsd-.da-expandedFolderBackground.collapsed-1GMuSb.da-collapsed {
+    /*animation: var(--unread-server-animation) 3s linear infinite;*/
+    /*border: 2px solid red;*/
+    background: transparent;
+    border-radius: 100%;
+    display: block;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    width: 48px !important;
+    height: 48px !important;
+    /* remove the left to right display transformation */
+    transform: none !important;
+}
+.listItem-2P_4kh,
+.wrapper-21YSNc {
+    width: auto;
+    margin-left: 9px;
+}
+.wrapper-1Rf91z .scroller-2TZvBN {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+    align-content: flex-start;
+}
+.wrapper-1Rf91z .scroller-2TZvBN .guildSeparator-3s64Iy {
+    position: relative;
+    width: 100%; 
+    margin-top: 10px;
+    width: 80px;
+    display: block; 
+    margin: 10px auto 5px;
+    margin-left: -18%;
+}
+/*NEW-END*/
+
+/*that little hirizontal line splitting channels and guilds containers*/
+.wrapper-1Rf91z.da-wrapper {
+  width: 148px;
+  border-right: 1px solid rgba(80,80,80,0.3);
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+  align-content: flex-start;
+}
+
+/*"typing" box*/
+.theme-dark .typing-2GQL18 {
+    background-color: transparent !important
+}
+
+/*scroller background*/
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+    background: rgba(20,20,20,0.4);
+    border-width: 0px;
+    width: 1px;
+}
+.scroller-2FKFPG::-webkit-scrollbar {
+    width: 8px;
+}
+/*scroller pointer*/
+.theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background: rgba(120,120,120,0.5);
+    border: rgba(0,0,0,0);
+}
+
+/*scroller of the guilds*/
+.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+/*scroller of the channels*/
+.scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background-color: rgba(100,100,100,0.3);
+}
+
+/*the seperator of the guilds and home button*/
+.guildSeparator-3s64Iy.da-guildSeparator {
+    position: relative;
+    background: rgba(50,50,50,0.6);
+    width: 100%;
+    margin-top: 15px;
+    left: 24px;
+}
+
+/*guild members on hover*/
+.theme-dark .member-3W1lQa:hover {
+    background-color: rgba(150, 150, 150, .1);
+    color: #fff;
+}
+
+/* Blocked meesages color */
+.theme-dark .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh-:hover {
+    background: rgba(240, 71, 71, 0.15);
+    color: #f04747;
+}
+.theme-dark .messageGroupBlocked-3wrQQX,
+.theme-dark .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh- {
+    background: rgba(200, 71, 71, 0.1);
+    border-color: rgba(200,50,50,0.5);
+    color: rgba(210,60,60,1);
+}
+.theme-dark .messageGroupBlocked-3wrQQX.revealed-1_RKsf {
+    background: rgba(120,0,0,0.2);
+    border-color: rgba(150,71,71,0.5);
+}
+
+/*width of the guilds wrapper AKA container*/
+.wrapper-1Rf91z.da-wrapper{width: 125px;}
+.wrapper-1Rf91z.da-wrapper.scrollerWrap-1IAIlv{width: 150px;}
+.wrapper-2lTRaf.da-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+    align-content: flex-start;
+}
+
+/*connections tab*/
+/*connections buttons*/
+.theme-dark .accountBtnInner-sj5jLs {
+    background-color: rgba(50,50,50,0.5);
+}
+/*connections buttons on hover*/
+.theme-dark .accountBtnInner-sj5jLs:hover {
+    background-color: rgba(80,80,80,0.5);
+}
+
+/*billing tab*/
+/*billing "Looking for a redeem key" box*/
+.theme-dark .codeRedemptionRedirect-1wVR4b {
+    background-color: rgba(20,20,20,0.4);
+    border-color: rgba(30,30,30,0.5);
+}
+
+/*pinned messages popup*/
+/*bg*/
+.theme-dark .messagesPopoutWrap-1MQ1bW {
+    background-color: rgba(30,30,30,0.5);
+}
+/*top*/
+.theme-dark .header-ykumBX {
+    background-color: rgba(20,20,20,0.5);
+}
+/*pinned message box*/
+.theme-dark .messageGroupWrapper-o-Zw7G {
+    background-color: rgba(20,20,20,0.8);
+    border-color: rgba(30,30,30,0.8);
+}
+/*jump to pinned message boxy*/
+.theme-dark .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
+    background-color: rgba(40,40,40,0.5);
+    box-shadow: 0 0 6px 4px rgba(40,40,40,0.5);
+}
+/*jump to pinned message button*/
+.theme-dark .jumpButton-3DTcS_{
+    background-color: rgba(30,30,30,0.5);
+}
+
+/*the box which appears on new members on top of the channels to "invite people"*/
+.channelNotices-41mJbj .channelNotice-1-XFjC.invite-OjTXrW {
+    background: rgba(10,10,10,0.2) url(/assets/916a384814e3bbd2a84e2a1b352a17c3.svg) no-repeat center 20px
+}
+/*then it's a button for it*/
+.channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u {
+    background-color: rgba(50,50,50,0.5);
+}
+.channelNotices-41mJbj .channelNotice-1-XFjC .message-3SOT5P .btn-11C5_u:hover {
+    background-color: rgba(40,40,40,0.9);
+}
+
+/*gift nitro box*/
+.theme-dark .modal-yWgWj- {
+    background-color: rgba(50,50,50,0.5);
+}
+.theme-dark .footer-3rDWdC {
+    background-color: transparent;
+}
+.theme-dark .option-1l2vXE {
+    background-color: rgba(20,20,20,0.5);
+}
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    background-color: rgba(60,60,60,0.6);
+}
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+    background-color: rgba(70,70,70,0.7);
+}
+
+/*main "Nitro" tab [image fade effect at the top]*/
+.theme-dark .itemBackground-2vEldQ:before {
+    background: radial-gradient(ellipse at top,transparent,transparent),linear-gradient(90deg,rgba(20,20,20,1) 0,transparent 40%,transparent 60%,rgba(20,20,20,1)),linear-gradient(0deg,rgba(20,20,20,1) 0,transparent 25%);
+}
+
+/*should be all of the green buttons on Discord*/
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: rgba(70,170,100,0.8);
+}
+.lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+    background-color: rgba(90,190,120,0.8);
+}
+
+/*shall be all of the brand color AKA Discord blue buttons*/
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: rgba(150,70,170,0.8);
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: rgba(170,90,190,0.8);
+}
+
+/*Discord blue switch color*/
+.themeDefault-24hCdX.valueChecked-m-4IJZ {
+    background-color: rgba(150,70,170,0.8);
+}
+.themeDefault-24hCdX.valueUnchecked-2lU_20 {
+    background-color: rgba(50,20,80,0.7);
+}
+
+/*slider bar color*/
+.barFill-23-gu- {
+    background-color: rgba(150,70,170,0.8);
+}
+.theme-dark .bar-2Qqk5Z {
+    background-color: rgba(50,20,80,0.7);
+}
+
+.wrapper-2F3Zv8.da-wrapper.xxlarge-1R_NA5.da-xxlarge.avatarXXLarge-GhVtwJ .inner-1W0Bkn.da-inner.stop-animation,
+.wrapper-2F3Zv8.da-wrapper.xxlarge-1R_NA5.da-xxlarge.avatarXXLarge-GhVtwJ .inner-1W0Bkn.da-inner.animate-2NjJXG.da-animate {
+    border: 2px solid gold;
+    box-shadow: 0px 0px 10px 1px gold;
+}
+
+/*guild tiers*/
+.theme-dark .iconBackgroundTierOne-2LhaMB,
+.theme-dark .iconBackgroundTierThree-3qw3JX,
+.theme-dark .iconBackgroundTierTwo-3bCmdc,
+.theme-dark .iconTierNone-3xOaeG {
+    color: rgba(60,60,60,1);
+}
+.theme-dark .iconBackgroundTierOne-2LhaMB.withBanner-3j8ruM,
+.theme-dark .iconBackgroundTierThree-3qw3JX.withBanner-3j8ruM,
+.theme-dark .iconBackgroundTierTwo-3bCmdc.withBanner-3j8ruM,
+.theme-dark .iconTierOne-BHC2T8,
+.theme-dark .iconTierTwo-_1edeM {
+    color: rgb(200,150,200);
+}
+
+/*server boost status*/
+.theme-dark .tierBody-x9kBBp,
+.theme-dark .tierBody-16Chc9 {
+    background: rgba(20,20,20,0.8)
+}
+.theme-dark .tierHeaderLocked-1a2opw,
+.theme-dark .tierHeaderLocked-1s2JJz {
+    background-image: linear-gradient(90deg,rgba(160,95,225,0.3), rgba(206,126,150,0.3));
+}
+.tierLock-1oFMOZ.da-tierLock,
+.tierLock-3CSxSX.da-tierLock {
+    color: rgba(200,10,10,1);
+}
+/*nitro server boost linear fade on adges*/
+.theme-dark .carouselRightGradientEdge-2Z3H8D {
+    background-image: linear-gradient(270deg,rgb(80,30,90),transparent);
+}
+.theme-dark .carouselLeftGradientEdge-3P4spl {
+    background-image: linear-gradient(270deg,transparent,rgb(80,30,90));
+}
+
+/*guild no icon*/
+.acronym-2mOFsV.da-acronym {
+    background-color: rgb(20,20,20);
+    transition: .5s background-color;
+}
+.acronym-2mOFsV.da-acronym:hover {
+    background-color: rgb(40,40,40);
+    transition: .5s background-color;
+}
+
+/*add a server*/
+.animator-US5i9g.da-animator.wrapper-2ZbzR9.fixClipping-3qAKRb.da-wrapper.da-fixClipping {
+    background: rgba(20,20,20,0.6);
+    box-shadow: 0 0 10px 0 purple;
+}
+.modal-3v8ziU.da-modal.slide-2pHaq5.da-slide.size-1XvbKb.da-size {
+    background: transparent;
+}
+.bda-dark .theme-dark .action-1lSjCi, .bda-dark .theme-light .action-1lSjCi {
+    background: rgba(30,30,30,0.5);
+}
+.or-3THJsp.da-or {
+    background: rgba(30,30,30,0.8) !important;
+    border: none !important;
+    box-shadow: 0 0 10px 0 gold;
+}
+.inputDefault-_djjkz.input-cIJ7To.size16-14cGz5.da-inputDefault.da-input.da-size16.input-1mgnkM.da-input {
+    color: gold;
+    text-shadow: 0 0 10px gold;
+}
+
+/*Search pop-out box*/
+.resultsGroup-r_nuzN {
+    background: transparent;
+}
+.theme-dark .option-96V44q {
+    background: rgba(20,20,20,0.4);
+}
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background: rgba(70,20,90,0.5);
+}
+.theme-dark .container-3ayLPN {
+    background: rgba(20,20,20,0.7);
+}
