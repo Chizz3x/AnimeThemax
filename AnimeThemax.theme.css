@@ -1,4 +1,5 @@
-/*META{"name":"AnimuThemax","description":"Get support here https://discord.gg/65YwV3b","author":"Chizz3x HellCat","version":"1.0.0"}*/
+//META{"name":"AnimuThemax","description":"Simple theme for Anime lovers and just, for everyone.","author":"Chizz3x HellCat","version":"1.1","source":"https://gitlab.com/HCat/animethemax","website":"https://discord.gg/zG83r6M"}*//{}
+
 
 /*
 Everything in rgba() should be informat as:
@@ -9,11 +10,14 @@ red,green,blue
 
 /*adjust the height and width of your screen if you see some white spaces of covered parts at edges*/
 /*be cautious adjusting these cause it can fuck some shit up*/
-.app-19_DXt.platform-win {
-    height: 95.7vh;
+.appMount-3lHmkl.bda-dark.da-appMount {
+    height: 100vh;
     width: 100vw;
     position: inherit;
-    top: 4.3vh;
+}
+.app-2rEoOp {
+	top: -0.5vh;
+	height: 104.2%;
 }
 
 @keyframes test {
@@ -65,6 +69,12 @@ red,green,blue
     visibility: hidden;
 }
 
+.theme-dark {
+	--background-tertiary: transparent;
+	--background-secondary: rgba(0,0,0,0.7);
+	--background-primary: transparent;
+}
+
 /*discord loading background*/
 .container-16j22k.fixClipping-3qAKRb.da-container.da-fixClipping {
     background-color: rgb(10,10,10);
@@ -79,12 +89,6 @@ red,green,blue
     bottom: 19px;
     right: 6px;
     position: relative
-}
-.wordmarkWindows-1v0lYD.wordmark-2iDDfm.da-wordmarkWindows.da-wordmark:after svg path {
-    /*d: path("")*/
-}
-.wordmarkWindows-1v0lYD.wordmark-2iDDfm.da-wordmarkWindows.da-wordmark svg path {
-    /*d: path("M3.57642276,0.141304348 L0,0.141304348 L0,4.22826087 L2.38069106,6.40217391 L2.38069106,2.43478261 L3.66260163,2.43478261 C4.47052846,2.43478261 4.86910569,2.83695652 4.86910569,3.4673913 L4.86910569,6.5 C4.86910569,7.13043478 4.49207317,7.55434783 3.66260163,7.55434783 L0,7.55434783 L0,9.85869565 L3.57642276,9.85869565 C5.49390244,9.86956522 7.29288618,8.90217391 7.29288618,6.66304348 L7.29288618,3.39130435 C7.29288618,1.13043478 5.49390244,0.141304348 3.57642276,0.141304348 Z M22.3310976,6.67391304 L22.3310976,3.32608696 C22.3310976,2.11956522 24.4640244,1.83695652 25.1103659,3.05434783 L27.0817073,2.23913043 C26.3168699,0.510869565 24.8949187,0 23.7207317,0 C21.803252,0 19.9073171,1.13043478 19.9073171,3.32608696 L19.9073171,6.67391304 C19.9073171,8.88043478 21.803252,10 23.6776423,10 C24.8841463,10 26.3276423,9.39130435 27.1247967,7.81521739 L25.0134146,6.82608696 C24.4963415,8.17391304 22.3310976,7.84782609 22.3310976,6.67391304 Z M15.8030488,3.7826087 C15.0597561,3.61956522 14.5642276,3.34782609 14.5319106,2.88043478 C14.575,1.75 16.2878049,1.7173913 17.2896341,2.79347826 L18.8731707,1.55434783 C17.8821138,0.326086957 16.7617886,0 15.598374,0 C13.8424797,0 12.1404472,1 12.1404472,2.91304348 C12.1404472,4.77173913 13.5408537,5.76086957 15.0813008,6 C15.8676829,6.10869565 16.7402439,6.42391304 16.7186992,6.97826087 C16.654065,8.02173913 14.5426829,7.9673913 13.5839431,6.7826087 L12.0650407,8.23913043 C12.9591463,9.40217391 14.1764228,10 15.3182927,10 C17.074187,10 19.0239837,8.9673913 19.0993902,7.08695652 C19.2071138,4.69565217 17.5050813,4.09782609 15.8030488,3.7826087 Z M8.59634146,9.85869565 L11.0093496,9.85869565 L11.0093496,0.141304348 L8.59634146,0.141304348 L8.59634146,9.85869565 Z M49.2835366,0.141304348 L45.7071138,0.141304348 L45.7071138,4.22826087 L48.0878049,6.40217391 L48.0878049,2.43478261 L49.3589431,2.43478261 C50.1668699,2.43478261 50.5654472,2.83695652 50.5654472,3.4673913 L50.5654472,6.5 C50.5654472,7.13043478 50.1884146,7.55434783 49.3589431,7.55434783 L45.6963415,7.55434783 L45.6963415,9.85869565 L49.2727642,9.85869565 C51.1902439,9.86956522 52.9892276,8.90217391 52.9892276,6.66304348 L52.9892276,3.39130435 C53,1.13043478 51.2010163,0.141304348 49.2835366,0.141304348 Z M31.7353659,0 C29.753252,0 27.7819106,1.09782609 27.7819106,3.33695652 L27.7819106,6.66304348 C27.7819106,8.89130435 29.7640244,10 31.7569106,10 C33.7390244,10 35.7103659,8.89130435 35.7103659,6.66304348 L35.7103659,3.33695652 C35.7103659,1.10869565 33.7174797,0 31.7353659,0 Z M33.2865854,6.66304348 C33.2865854,7.35869565 32.5109756,7.7173913 31.7461382,7.7173913 C30.9705285,7.7173913 30.1949187,7.36956522 30.1949187,6.66304348 L30.1949187,3.33695652 C30.1949187,2.61956522 30.9489837,2.23913043 31.7030488,2.23913043 C32.4894309,2.23913043 33.2865854,2.58695652 33.2865854,3.33695652 L33.2865854,6.66304348 Z M44.3605691,3.33695652 C44.3067073,1.05434783 42.7770325,0.141304348 40.8056911,0.141304348 L36.9815041,0.141304348 L36.9815041,9.86956522 L39.4268293,9.86956522 L39.4268293,6.77173913 L39.8577236,6.77173913 L42.0768293,9.85869565 L45.0930894,9.85869565 L42.4861789,6.52173913 C43.6495935,6.15217391 44.3605691,5.14130435 44.3605691,3.33695652 Z M40.8487805,4.65217391 L39.4268293,4.65217391 L39.4268293,2.43478261 L40.8487805,2.43478261 C42.3784553,2.43478261 42.3784553,4.65217391 40.8487805,4.65217391,M2,15 L7,15 L5,13 L2,13 L0,15 L0,20 L2,22 L5,22 L7,20 L2,20 Z M8,12 L8,22 L10,21 L10,18 L13,18 L13,21 L15,22 L15,12 L13,13 L13,16 L10,16 L10,13 Z M17,13 L19.3,12 L19.3,21 17,22 Z M22,12.2 L28.1,12.1 L28.5,14 L24.5,20 L28.5,20 L26.5,21.5 L22,21.5 L22,20 L26,14 L24,14") !important;*/
 }
 
 /*(nope... don't touch this too)*/
@@ -140,8 +144,9 @@ red,green,blue
     transition: border-radius 0.2s;
 }
 .listItem-2P_4kh.da-listItem.bd-guild.bd-unread:hover .pill-31IEus.da-pill.wrapper-sa6paO.da-wrapper,
-.wrapper-21YSNc.da-wrapper {
-    border-radius: 35%;
+.pill-31IEus {
+    pointer-events: none;
+	width: 100%;
 }
 /*selected guild glow*/
 .listItem-2P_4kh.da-listItem.bd-guild.bd-selected {
@@ -529,8 +534,8 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     height: 150px;
 }
 /*emoji picker search bar*/
-.emojiPicker-3m1S-j .searchBar-2pWH0_ {
-    background-color: rgba(20,20,20,0.5);
+.bda-dark .emojiPicker-3m1S-j .header-1nkwgG .searchBar-2pWH0_ {
+    background-color: rgba(40,40,40,0.4);
 }
 .input-1Rv96N.da-input {
     color: rgba(230,230,230,0.8);
@@ -546,11 +551,12 @@ If you still want to enable it, just delete the '/*' at the start and at the end
 }
 /*emoji picker scroller*/
 .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb, .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
-    background-color: rgba(150,80,150,1);
+    background-color: rgba(120,80,100,1);
 }
 .bda-dark .emoji-picker .scroller::-webkit-scrollbar, .bda-dark .emoji-picker .scroller::-webkit-scrollbar-track, .bda-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar-track, .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar-track-piece {
     background-color: rgba(0,0,0,0) !important;
     border: none !important;
+	width: 14px;
 }
 
 /*GIF picker*/
@@ -799,8 +805,14 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     background: rgba(0, 0, 0, 0);
 }
 /*guild channels container*/
-.channels-Ie2l6A {
+.container-PNkimc.da-container {
     background-color: rgba(0, 0, 0, 0.7);
+}
+/*Channels + user container*/
+.sidebar-2K8pFh.da-sidebar {
+	/*top: 1px;
+	position: relative;*/
+	height: 95.9vh;
 }
 /*and once more channel container*/
 .container-PNkimc {
@@ -810,8 +822,11 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     position: relative;
 }
 /*user [inguild] tab at the bottom left*/
-.container-2Thooq {
-    background: rgba(0,0,0,0) !important;
+.panels-j1Uci_ {
+	background: transparent;
+}
+.container-3baos1.da-container {
+    background: rgba(0,0,0,0.6) !important;
     color: #fff;
     border-top: 1px solid rgba(50,50,50,0.5);
 }
@@ -834,9 +849,12 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     background-color: rgba(0,0,0,0);
 }
 /*removes weird rounded borners in guild container and app container*/
-.platform-win .base-3dtUhz,
+.sidebar-2K8pFh.da-sidebar,
 .wrapper-1Rf91z {
     border-radius: 0px;
+}
+.base-3dtUhz {
+	left: 15.3vh
 }
 /*guilds container*/
 .wrapper-1Rf91z.da-wrapper {
@@ -865,7 +883,8 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     margin-bottom: 8px;
     margin-left: 2px;
 }
-.item-2hkk8m {
+.item-2hkk8m,
+.expandedFolderBackground-2sPsd-.da-expandedFolderBackground.collapsed-1GMuSb.da-collapsed {
     /*animation: var(--unread-server-animation) 3s linear infinite;*/
     /*border: 2px solid red;*/
     background: transparent;
@@ -874,8 +893,6 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     margin-left: 0;
     margin-top: 0;
     position: absolute;
-    top: 17%;
-    right: 17% !important;
     width: 48px !important;
     height: 48px !important;
     /* remove the left to right display transformation */
@@ -891,9 +908,6 @@ If you still want to enable it, just delete the '/*' at the start and at the end
     flex-flow: row wrap;
     padding-left: 0;
     align-content: flex-start;
-}
-.dms-rcsEnV > .wrapper-1Rf91z .scroller-2TZvBN .container-1ETFDs:first-child {
-    margin: none !important;
 }
 .wrapper-1Rf91z .scroller-2TZvBN .guildSeparator-3s64Iy {
     position: relative;
