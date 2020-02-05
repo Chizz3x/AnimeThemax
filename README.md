@@ -1,3 +1,6 @@
+# ATTENTION!
+This part of AnimeThemax is abandoned and currently closed for further updates. The whole project is transfered to [GitLab](https://gitlab.com/HCat/animethemax)
+
 # AnimeThemax
 
 A custom Discord theme
